@@ -1,35 +1,66 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
-  background-color: rgb(209, 240, 230);
-}
-
-h1 {
-  color: #333;
-}
-
-form {
+  background-color: #1d9696; /* Light background color */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
 }
 
-input, textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Style the form container */
+form {
+  background-color: #ffffff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Fixed width */
 }
 
+/* Style form headings */
+h2 {
+  margin-bottom: 15px; /* Space below the heading */
+  text-align: center; /* Center align the heading */
+  color: #333; /* Dark text color */
+}
+
+/* Style the input fields */
+input[type="text"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Space inside the input */
+  margin-bottom: 15px; /* Space below each input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Text size */
+}
+
+/* Style the textarea specifically */
+textarea {
+  resize: none; /* Disable resizing */
+  height: 100px; /* Fixed height */
+}
+
+/* Style the submit button */
 button {
-  padding: 10px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px; /* Space inside the button */
+  border-radius: 4px; /* Slightly rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Text size */
+  width: 100%; /* Full width */
 }
 
+/* Change button color on hover */
 button:hover {
-  background-color: #218838;
+  background-color: #0056b3; /* Darker blue on hover */
 }
